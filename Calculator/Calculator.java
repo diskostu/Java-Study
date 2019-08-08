@@ -1,6 +1,8 @@
 /* 
     A quick (No knowledge) calculator made using Java , which i dont know nothing Yet
     I have some knowledge in Python , C# , C and GO , and now i want to learn Java
+
+    EDIT : I know there are some errors , but in the essence , i quite got it right , right ?
 */
 import com.sun.java_cup.internal.runtime.Scanner;
 
