@@ -4,11 +4,10 @@ public class Calculator {
 	public static void main(String[] args) {
 		float   result 		= 	0;
         char    operator 	= 	'+';
-        Boolean newCalc 	=	true;
-
+		Boolean newCalc 	=	true;
+		Scanner sc = new Scanner(System.in);
+		
 		while (newCalc) {
-			Scanner sc = new Scanner(System.in);
-
 			System.out.println("Enter a value for A :");
 			int valueA = sc.nextInt();
 
@@ -45,17 +44,11 @@ public class Calculator {
 			System.out.println("\n\n\tThe result of " + valueA + " " + operator + " " + valueB + " = " + result);
 
 			System.out.println("\nWould you like to do another calculation ? [Y/N]");
-			String cont =	sc.next();
 
-			if (cont.equals("n")){
+			if (sc.next().equals("n")){
 				newCalc	=	false;
 			}
-			else if(cont.equals("y")){
-				newCalc	=	true;
-			}
-			else{
-				newCalc = false;
-			}
+			else {	newCalc	=	true;}
 		}
 		System.out.println("\nThanks for using Luk3's Calculator");
 	}
